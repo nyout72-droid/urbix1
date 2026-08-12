@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="URBIX — Patinetas urbanas eléctricas de alta gama. Potencia, diseño y libertad para moverte por la ciudad sin límites." />
+  <title>URBIX — Movilidad urbana. Sin límites.</title>
+
+  <!-- Google Fonts: Space Grotesk (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo" aria-label="URBIX inicio">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M13 2L4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg>
+        </span>
+        <span class="logo-text">URBIX</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#patinetas" class="nav-link">Patinetas</a></li>
+          <li><a href="#tecnologia" class="nav-link">Tecnología</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cartCount" aria-hidden="true">0</span>
+        </button>
+        <a href="#patinetas" class="btn btn-primary nav-cta">Comprar ahora</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU OVERLAY ============ -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Navegación móvil">
+      <ul>
+        <li><a href="#inicio" class="mobile-link">Inicio</a></li>
+        <li><a href="#patinetas" class="mobile-link">Patinetas</a></li>
+        <li><a href="#tecnologia" class="mobile-link">Tecnología</a></li>
+        <li><a href="#nosotros" class="mobile-link">Nosotros</a></li>
+        <li><a href="#faq" class="mobile-link">FAQ</a></li>
+        <li><a href="#contacto" class="mobile-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg">
+        <img src="imagenes/fondo.png" alt="Patineta eléctrica urbana circulando por una ciudad de noche" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <span class="hero-badge reveal" data-delay="0">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Nueva generación 2026
+        </span>
+        <h1 class="hero-title reveal" data-delay="200">
+          MUÉVETE<br /><span class="accent">SIN LÍMITES.</span>
+        </h1>
+        <p class="hero-subtitle reveal" data-delay="400">
+          Potencia eléctrica. Diseño urbano. Libertad para llegar más lejos.
+        </p>
+        <div class="hero-buttons reveal" data-delay="600">
+          <a href="#patinetas" class="btn btn-primary btn-lg">
+            Ver patinetas
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#nosotros" class="btn btn-ghost btn-lg">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            Descubrir URBIX
+          </a>
+        </div>
+        <div class="hero-stats reveal" data-delay="800">
+          <div class="stat"><span class="stat-value">45 km</span><span class="stat-label">Autonomía</span></div>
+          <div class="stat"><span class="stat-value">35 km/h</span><span class="stat-label">Velocidad máxima</span></div>
+          <div class="stat"><span class="stat-value">4 h</span><span class="stat-label">Carga rápida</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCTS ============ -->
+    <section class="section" id="patinetas">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Elige tu viaje</span>
+          <h2 class="section-title">Tres formas de moverte.</h2>
+          <p class="section-desc">Cada modelo está diseñado para un estilo de vida. Encuentra el tuyo.</p>
+        </div>
+        <div class="products-grid">
+          <!-- URBIX ONE -->
+          <article class="product-card reveal" data-product="urbix-one">
+            <div class="product-image-wrap">
+              <img src="imagenes/carta 1.png" alt="Patineta eléctrica URBIX ONE" loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">URBIX ONE</h3>
+              <p class="product-tagline">Tu primer impulso urbano</p>
+              <div class="product-specs">
+                <div><span>35 km</span><small>Autonomía</small></div>
+                <div><span>30 km/h</span><small>Velocidad</small></div>
+                <div><span>500W</span><small>Motor</small></div>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$14,999 MXN</span>
+                <button class="btn btn-outline btn-sm js-open-modal" data-product="urbix-one">Ver modelo</button>
+              </div>
+            </div>
+          </article>
+          <!-- URBIX PRO -->
+          <article class="product-card reveal" data-product="urbix-pro">
+            <span class="product-badge">Más vendido</span>
+            <div class="product-image-wrap">
+              <img src="imagenes/carta 2.png" alt="Patineta eléctrica URBIX PRO" loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">URBIX PRO</h3>
+              <p class="product-tagline">El favorito de la ciudad</p>
+              <div class="product-specs">
+                <div><span>45 km</span><small>Autonomía</small></div>
+                <div><span>35 km/h</span><small>Velocidad</small></div>
+                <div><span>800W</span><small>Motor</small></div>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$19,999 MXN</span>
+                <button class="btn btn-outline btn-sm js-open-modal" data-product="urbix-pro">Ver modelo</button>
+              </div>
+            </div>
+          </article>
+          <!-- URBIX X -->
+          <article class="product-card reveal" data-product="urbix-x">
+            <span class="product-badge badge-premium">Premium</span>
+            <div class="product-image-wrap">
+              <img src="imagenes/carta 3.png" alt="Patineta eléctrica URBIX X" loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3 class="product-name">URBIX X</h3>
+              <p class="product-tagline">El máximo rendimiento</p>
+              <div class="product-specs">
+                <div><span>60 km</span><small>Autonomía</small></div>
+                <div><span>40 km/h</span><small>Velocidad</small></div>
+                <div><span>1000W</span><small>Motor</small></div>
+              </div>
+              <div class="product-footer">
+                <span class="product-price">$25,999 MXN</span>
+                <button class="btn btn-outline btn-sm js-open-modal" data-product="urbix-x">Ver modelo</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section section-alt" id="caracteristicas">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Características</span>
+          <h2 class="section-title">DISEÑADA PARA LA CIUDAD.</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon">⚡</div>
+            <h3>Potencia inteligente</h3>
+            <p>Motor eléctrico de alto rendimiento para desplazamientos urbanos.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">🔋</div>
+            <h3>Gran autonomía</h3>
+            <p>Recorre más kilómetros con una sola carga.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">🛡️</div>
+            <h3>Seguridad</h3>
+            <p>Frenos de alto rendimiento y sistema de iluminación LED.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">📱</div>
+            <h3>Tecnología conectada</h3>
+            <p>Controla tu patineta desde tu smartphone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECHNOLOGY ============ -->
+    <section class="section" id="tecnologia">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Tecnología</span>
+          <h2 class="section-title">TECNOLOGÍA QUE SE SIENTE.</h2>
+        </div>
+        <div class="tech-visual reveal">
+          <div class="tech-image">
+            <img src="imagenes/imagen grande.png" alt="Patineta eléctrica URBIX con tecnología de vanguardia" loading="lazy" />
+          </div>
+          <!-- Tech labels with connector lines -->
+          <div class="tech-label tech-l1" style="--top:14%"><span class="tech-dot"></span><span class="tech-line"></span><span class="tech-text">Motor 800W</span></div>
+          <div class="tech-label tech-l2" style="--top:38%"><span class="tech-dot"></span><span class="tech-line"></span><span class="tech-text">Pantalla digital</span></div>
+          <div class="tech-label tech-l3" style="--top:62%"><span class="tech-dot"></span><span class="tech-line"></span><span class="tech-text">Luces LED</span></div>
+          <div class="tech-label tech-l4" style="--top:86%"><span class="tech-dot"></span><span class="tech-line"></span><span class="tech-text">Frenos de disco</span></div>
+          <div class="tech-label tech-r1" style="--top:14%"><span class="tech-text">Modos de conducción</span><span class="tech-line"></span><span class="tech-dot"></span></div>
+          <div class="tech-label tech-r2" style="--top:38%"><span class="tech-text">Bluetooth</span><span class="tech-line"></span><span class="tech-dot"></span></div>
+          <div class="tech-label tech-r3" style="--top:62%"><span class="tech-text">App móvil</span><span class="tech-line"></span><span class="tech-dot"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CITY RHYTHM ============ -->
+    <section class="city-section" id="nosotros">
+      <div class="city-bg">
+        <img src="imagenes/explora modelos.png" alt="Ciudad urbana de noche con luces de neón" loading="lazy" />
+        <div class="city-overlay"></div>
+      </div>
+      <div class="container city-content reveal">
+        <h2 class="city-title">TU CIUDAD.<br /><span class="accent">TU RITMO.</span></h2>
+        <p class="city-text">Deja el tráfico atrás y descubre una nueva forma de moverte.</p>
+        <a href="#patinetas" class="btn btn-primary btn-lg">
+          Explorar modelos
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ COMPARATOR ============ -->
+    <section class="section section-alt" id="comparador">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Caracterisicas</span>
+          <h2 class="section-title">COMPARA Y ELIGE</h2>
+        </div>
+        <div class="comparator-wrap reveal">
+          <div class="table-scroll">
+            <table class="comparator-table">
+              <thead>
+                <tr>
+                  <th class="col-label">Característica</th>
+                  <th>URBIX ONE</th>
+                  <th class="col-highlight">URBIX PRO</th>
+                  <th>URBIX X</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Precio</td><td>$14,999</td><td class="col-highlight">$19,999</td><td>$25,999</td></tr>
+                <tr><td>Autonomía</td><td>35 km</td><td class="col-highlight">45 km</td><td>60 km</td></tr>
+                <tr><td>Velocidad</td><td>30 km/h</td><td class="col-highlight">35 km/h</td><td>40 km/h</td></tr>
+                <tr><td>Motor</td><td>500W</td><td class="col-highlight">800W</td><td>1000W</td></tr>
+                <tr><td>Carga</td><td>4 h</td><td class="col-highlight">4 h</td><td>5 h</td></tr>
+                <tr><td>Peso</td><td>16 kg</td><td class="col-highlight">18 kg</td><td>21 kg</td></tr>
+                <tr><td>Suspensión</td><td><span class="x-no">No</span></td><td class="col-highlight"><span class="x-yes">Sí</span></td><td><span class="x-yes">Sí</span></td></tr>
+                <tr><td>Luces LED</td><td><span class="x-yes">Sí</span></td><td class="col-highlight"><span class="x-yes">Sí</span></td><td><span class="x-yes">Sí</span></td></tr>
+                <tr><td>Bluetooth</td><td><span class="x-no">No</span></td><td class="col-highlight"><span class="x-yes">Sí</span></td><td><span class="x-yes">Sí</span></td></tr>
+                <tr><td>App móvil</td><td><span class="x-no">No</span></td><td class="col-highlight"><span class="x-yes">Sí</span></td><td><span class="x-yes">Sí</span></td></tr>
+                <tr class="row-cta">
+                  <td></td>
+                  <td><button class="btn btn-outline btn-sm js-open-modal" data-product="urbix-one">Comprar</button></td>
+                  <td class="col-highlight"><button class="btn btn-primary btn-sm js-open-modal" data-product="urbix-pro">Comprar</button></td>
+                  <td><button class="btn btn-outline btn-sm js-open-modal" data-product="urbix-x">Comprar</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section" id="testimonios">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Opiniones</span>
+          <h2 class="section-title">LO QUE DICEN NUESTROS CLIENTES</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Mi trayecto al trabajo cambió completamente. Es rápida, cómoda y tiene un diseño increíble."</p>
+            <div class="testimonial-author"><span class="author-avatar">C</span><span>Carlos M.</span></div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"La autonomía es excelente y se siente muy estable incluso en trayectos largos."</p>
+            <div class="testimonial-author"><span class="author-avatar">A</span><span>Andrea R.</span></div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"El diseño de la URBIX PRO es espectacular. Parece una patineta del futuro."</p>
+            <div class="testimonial-author"><span class="author-avatar">D</span><span>Diego R.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-alt" id="faq">
+      <div class="container container-narrow">
+        <div class="section-header reveal">
+          <span class="section-tag">Preguntas frecuentes</span>
+          <h2 class="section-title">Resolvemos tus dudas.</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false"><span>¿Cuánto tarda en cargar?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-answer"><p>El tiempo de carga varía según el modelo: la URBIX ONE carga en 3.5 horas, la URBIX PRO en 4 horas y la URBIX X en 5 horas. Nuestras baterías de litio de alta densidad permiten cargas rápidas y seguras.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false"><span>¿Cuál es la autonomía?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-answer"><p>La autonomía depende del modelo: URBIX ONE ofrece hasta 35 km, URBIX PRO hasta 45 km y URBIX X hasta 60 km con una sola carga. La autonomía real puede variar según el peso del conductor, el terreno y el modo de conducción.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false"><span>¿Puedo usarla bajo la lluvia?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-answer"><p>Sí. Todas nuestras patinetas cuentan con certificación IP54 que protege contra salpicaduras de agua y polvo. Sin embargo, no se recomienda su uso bajo lluvia intensa o encharcamientos profundos.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false"><span>¿Tiene garantía?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-answer"><p>Todos los modelos incluyen garantía: 12 meses para URBIX ONE, 24 meses para URBIX PRO y 36 meses para URBIX X, cubriendo defectos de fabricación en motor, batería y estructura.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false"><span>¿Realizan envíos a todo México?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-answer"><p>Sí, enviamos a todo el país sin costo. La entrega en zonas metropolitanas toma de 2 a 4 días hábiles y en el resto del país de 3 a 7 días hábiles.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false"><span>¿Hay refacciones disponibles?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-answer"><p>Contamos con refacciones originales para todos los modelos: baterías, llantas, frenos, luces y piezas estructurales. Puedes solicitarlas a través de nuestro centro de contacto.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false"><span>¿Puedo comprar a meses sin intereses?</span><span class="faq-icon" aria-hidden="true"></span></button>
+            <div class="faq-answer"><p>Sí, aceptamos pagos a 3, 6 y 12 meses sin intereses con tarjetas de crédito participantes. También ofrecemos financiamiento propio con aprobación inmediata.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="cta-section">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="container cta-content reveal">
+        <h2 class="cta-title">EL FUTURO DE LA MOVILIDAD<br /><span class="accent">YA ESTÁ AQUÍ.</span></h2>
+        <p class="cta-text">Elige tu URBIX y cambia la forma en que recorres la ciudad.</p>
+        <a href="#patinetas" class="btn btn-primary btn-lg">COMPRAR AHORA</a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contacto">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag">Contacto</span>
+            <h2 class="section-title">¿TIENES ALGUNA DUDA?</h2>
+            <p class="section-desc">¿Tienes preguntas sobre nuestros modelos o quieres ser distribuidor? Escríbenos y te responderemos en menos de 24 horas.</p>
+            <div class="contact-details">
+              <p>correo@urbix.mx</p>
+              <p>Telefono de empresa</p>
+              <p>Estado de Mexico, México</p>
+            </div>
+          </div>
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="cName">Nombre</label>
+              <input type="text" id="cName" name="name" placeholder="Tu nombre" />
+              <span class="form-error" id="cNameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="cEmail">Email</label>
+              <input type="email" id="cEmail" name="email" placeholder="correo" />
+              <span class="form-error" id="cEmailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="cPhone">Teléfono</label>
+              <input type="tel" id="cPhone" name="phone" placeholder="Telefono" />
+              <span class="form-error" id="cPhoneError"></span>
+            </div>
+            <div class="form-group">
+              <label for="cMessage">Mensaje</label>
+              <textarea id="cMessage" name="message" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+              <span class="form-error" id="cMessageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+            <div class="form-success" id="contactSuccess" hidden>
+              ✓ Mensaje enviado. Te contactaremos pronto.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="newsletter-section">
+      <div class="container newsletter-content reveal">
+        <h3>ÚNETE A LA REVOLUCIÓN URBANA</h3>
+        <p>Recibe novedades, lanzamientos y promociones de URBIX.</p>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <input type="email" id="newsletterEmail" placeholder="tucorreo@ejemplo.com" aria-label="Email para newsletter" />
+          <button type="submit" class="btn btn-primary">Suscribirme</button>
+        </form>
+        <div class="newsletter-success" id="newsletterSuccess" hidden>✓ ¡Gracias por suscribirte!</div>
+        <div class="newsletter-error" id="newsletterError" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="nav-logo">
+          <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M13 2L4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg></span>
+          <span class="logo-text">URBIX</span>
+        </a>
+        <p class="footer-tagline">Movilidad urbana. Sin límites.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram" class="social-link"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" aria-label="TikTok" class="social-link"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg></a>
+          <a href="#" aria-label="Facebook" class="social-link"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube" class="social-link"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#patinetas">Patinetas</a></li>
+          <li><a href="#tecnologia">Tecnología</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Privacidad</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 URBIX. Todos los derechos reservados.</p>
+        <p>Diseñado en Estado de México.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ PRODUCT MODAL ============ -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar modal">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-body" id="modalBody">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-header">
+      <h3><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Tu carrito <span class="cart-header-count" id="cartHeaderCount">0</span></h3>
+      <button class="cart-close" id="cartClose" aria-label="Cerrar carrito">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Filled by JS -->
+    </div>
+    <div class="cart-footer" id="cartFooter" hidden>
+      <div class="cart-total"><span>Total</span><span id="cartTotal">$0 MXN</span></div>
+      <button class="btn btn-primary btn-block">Finalizar compra</button>
+      <button class="cart-clear" id="cartClear">Vaciar carrito</button>
+    </div>
+  </aside>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
